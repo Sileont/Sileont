@@ -1,0 +1,333 @@
+@charset "utf-8";
+* {
+ margin: 0;
+ padding: 0;
+ outline: none;
+}
+
+html {height: 100%;}
+
+body {
+    width: 100%;
+    height: 100%;
+    color:#333;
+    background: #f7f7f7;
+    font-size: 1em;
+    font-family: "Segoe UI", sans-serif;
+    line-height: 135%;
+}
+
+a {
+    color: brown;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+h1 {
+    margin: 10px;
+    padding: 10px;
+}
+
+a:hover {
+    color: goldenrod;
+    text-decoration: none;
+    transition: all.6s ease;
+    -moz-transition: all.6s ease;
+    -webkit-transition: all.6s ease;
+    -ms-transition: all.6s ease;
+}
+
+a:active {color: indigo;}
+
+img {
+    max-width: 20%;
+    height: auto;
+    width: auto\9;
+}
+
+.p {
+    font-style: 50px;
+}
+
+hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    border-top: 1px solid #ccc;
+    padding: 0;
+}
+
+.left {float: left}
+.right { float: right}
+.clear {clear: both}
+.center {float: center;}
+
+
+/* Selection Block*/
+::selection {background: brown; color: white;}
+::-moz-selection {background: brown; color: white;}
+
+header, footer {
+ width: 98%;
+ background-color: white;
+ min-height: 45px;
+ float: left;
+
+}
+
+header {
+    border-bottom: 2px solid silver;
+    padding: 1%;
+}
+#logo {
+    font-size: 3em;
+    font-family: Comic Sans MS, sans-serif;
+    color: rgb(124, 99, 99);
+}
+
+.contact {
+    font-size: 1.5em;
+    font-family: Comic Sans MS, sans-serif;
+    margin-left: 18px;
+}
+
+input[type=text].field {
+    border-radius: 5px;
+    border: 2px saddlebrown;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+input[type=text].field:focus {border: 2px brown;}
+
+#menu {
+    color: #666;
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 1.7em;
+}
+
+#menu hr {
+    width: 500px;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#menuHrefs a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: rgb(115, 127, 139);
+}
+
+#menuHrefs a:hover {background-color:thistle;}
+/* Основнные стили для сайта*/
+#wapper {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
+#wapper #articles {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+#wapper #articles article {
+    float: left;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: #fafafa;
+    min-height: 400px;
+}
+
+@media (min-width: 700px) {
+#wapper #articles article {
+    width: 31.3%;
+    margin-right: 2%;
+}}
+
+@media (max-width: 699px){
+#wapper #articles article {
+    width: 100%;
+    margin-bottom: 10px;
+}}
+
+#wapper #articles article img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid #fff;
+}
+
+#wapper #articles article h2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 1.7em;
+    color: #4a4a4a;
+}
+
+#wapper #articles article p {
+    width: 80%;
+    margin-left: 10%;
+    text-indent: 1em;
+}
+.article_middle
+.article_title {
+    margin-bottom: 8px;
+}
+
+.article_title {
+    font-size: 38px;
+    font-weight: 700;
+    padding: 10px;
+    margin: 0 0 10px;
+    line-height: 44px;
+}
+
+#wapper #articles article a {
+    padding: 5px 5px;
+    background-color: #eb7beb;
+    margin-left: 5%;
+    border-radius: 10px;
+    color: #fff;
+    float: left;
+    margin-bottom: 10px;
+
+}
+
+#wapper #articles article a:hover {background-color: springgreen;}
+
+#about_us {
+    width: 100%;
+    float: left;
+    background-color:rgb(250, 245, 245);
+    border-radius: 5px;
+    border: 5px solid rgb(235, 226, 226);
+    height: 430px;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+#columRight {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+/* Стили для формы */
+
+form {
+    width: 60%;
+    margin-left: 20%;
+    float: left;
+}
+
+form label {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 2% 0;
+    float: left;
+    clear: both;
+    width: 40%;
+    margin-bottom: 10px;
+}
+
+form input:focus,form textarea:focus {border: 2px solid fuchsia;}
+
+form textarea {
+    width: 60%;
+    float: left;
+    clear: both;
+    background: #fafafa;
+    border: 2px slategrey;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.7em;
+}
+
+form #send {
+    float: left;
+    padding: 10px;
+    background-color: rgb(175, 83, 83);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: #fafafa;
+}
+
+form #send:hover {
+    background-color: rgb(231, 143, 27);
+}
+
+#main_social_block {
+    width: 100%;
+    padding: 2% 0;
+    border-bottom: 2px silver;
+    border-top: 2px silver;
+    margin: 20px 0;
+    float: left;
+    background: url("img/s1200.jfif") repeat-x center;
+    height: 200px;
+}
+
+
+
+#main_social_block_in {
+    text-align: center;
+    padding: 1%;
+    height: 80px;
+    background-color: #fafafa;
+    border: 1px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    width: 500px;
+    max-width: 98%;
+}
+
+#main_social_block_in a {
+    float: left;
+    padding: 5px 10px;
+    background-color:#ccc;
+    border-radius: 6px;
+    color: aqua;
+    margin-left: 35%;
+    margin-top: 12px;
+}
+
+footer {
+    padding: 1%;
+    border-top: 2px solid silver;
+    margin-top: 10px;
+    padding-bottom: 2%;
+}
+footer img {width: 5%; float: left; margin-right: 5px;}
+
+#page-wrap:after 
+{
+    content: "";
+    display: block;
+}
+
+footer, #page-wrap:after {height: 10px}
+
+#page-wrap {
+    min-height: 94%;
+    margin-bottom: -10px;
+}
